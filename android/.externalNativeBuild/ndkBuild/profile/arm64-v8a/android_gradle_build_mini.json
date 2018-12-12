@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Android.mk",
+    "/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/zhaomenghuan/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj NDK_LIBS_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/lib clean"
+  ],
+  "libraries": {
+    "fb-profile-arm64-v8a": {
+      "artifactName": "fb",
+      "buildCommand": "/Users/zhaomenghuan/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj NDK_LIBS_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/lib /Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj/local/arm64-v8a/libfb.a",
+      "abi": "arm64-v8a",
+      "output": "/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj/local/arm64-v8a/libfb.a"
+    },
+    "va++-profile-arm64-v8a": {
+      "artifactName": "va++",
+      "buildCommand": "/Users/zhaomenghuan/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/android/src/main/jni/Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj NDK_LIBS_OUT\u003d/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/lib /Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj/local/arm64-v8a/libva++.so",
+      "abi": "arm64-v8a",
+      "output": "/Users/zhaomenghuan/agree/flutter/plugins/flutter_virtual_app/example/build/flutter_virtual_app/intermediates/ndkBuild/profile/obj/local/arm64-v8a/libva++.so"
+    }
+  }
+}

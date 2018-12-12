@@ -1,0 +1,54 @@
+group 'com.lody.virtual'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        externalNativeBuild {
+            ndkBuild {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path file("src/main/jni/Android.mk")
+        }
+    }
+
+    aidlPackageWhiteList "android/accounts/IAccountAuthenticator.aidl", "android/accounts/IAccountAuthenticatorResponse.aidl", "android/accounts/IAccountManagerResponse.aidl", "android/app/IActivityManager/ContentProviderHolder.aidl", "android/app/job/IJobCallback.aidl", "android/app/job/IJobService.aidl", "android/app/IServiceConnection.aidl", "android/app/IStopUserCallback.aidl", "android/content/pm/IPackageDataObserver.aidl",
+            "android/content/pm/IPackageDeleteObserver2.aidl", "android/content/pm/IPackageInstallerCallback.aidl", "android/content/pm/IPackageInstallerSession.aidl", "android/content/pm/IPackageInstallObserver.aidl", "android/content/pm/IPackageInstallObserver2.aidl", "android/content/IIntentReceiver.aidl", "android/content/ISyncAdapter.aidl", "android/content/ISyncContext.aidl", "android/content/ISyncStatusObserver.aidl", "android/location/ILocationListener.aidl",
+            "android/net/wifi/IWifiScanner.aidl", "android/net/IConnectivityManager.aidl", "com/lody/virtual/client/IVClient.aidl", "com/lody/virtual/os/VUserInfo.aidl", "com/lody/virtual/remote/vloc/VCell.aidl", "com/lody/virtual/remote/vloc/VLocation.aidl", "com/lody/virtual/remote/vloc/VWifi.aidl", "com/lody/virtual/remote/AppTaskInfo.aidl", "com/lody/virtual/remote/BadgerInfo.aidl", "com/lody/virtual/remote/InstalledAppInfo.aidl", "com/lody/virtual/remote/InstallResult.aidl",
+            "com/lody/virtual/remote/PendingIntentData.aidl", "com/lody/virtual/remote/PendingResultData.aidl", "com/lody/virtual/remote/Problem.aidl", "com/lody/virtual/remote/ReceiverInfo.aidl", "com/lody/virtual/remote/VDeviceInfo.aidl", "com/lody/virtual/remote/VParceledListSlice.aidl", "com/lody/virtual/server/interfaces/IAppRequestListener.aidl", "com/lody/virtual/server/interfaces/IIntentFilterObserver.aidl", "com/lody/virtual/server/interfaces/IPackageObserver.aidl",
+            "com/lody/virtual/server/interfaces/IProcessObserver.aidl", "com/lody/virtual/server/interfaces/IServiceFetcher.aidl", "com/lody/virtual/server/interfaces/IUiCallback.aidl", "com/lody/virtual/server/pm/installer/SessionInfo.aidl", "com/lody/virtual/server/pm/installer/SessionParams.aidl", "com/lody/virtual/server/IBinderDelegateService.aidl", "com/lody/virtual/server/IPackageInstaller.aidl", "com/lody/virtual/server/IPackageInstallerSession.aidl"
+
+    lintOptions {
+        // IJobService need NewApi
+        warning 'NewApi', 'OnClick'
+        abortOnError false
+        disable 'InvalidPackage'
+    }
+}
